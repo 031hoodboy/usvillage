@@ -3,40 +3,41 @@ import styled from "styled-components";
 
 const Apply = () => {
   return (
-    <HeaderBlock>
-      <HeaderWrapper>
-        <Logo />
-        <Login>로그인</Login>
-      </HeaderWrapper>
-    </HeaderBlock>
+    <ApplyBlock>
+      <Tour></Tour>
+      <TopScroll>^</TopScroll>
+    </ApplyBlock>
   );
 };
 
-const HeaderBlock = styled.div`
-  width: 100%;
-  border-bottom: 1px solid lightgray;
-  position: sticky;
-  top: 0;
+const ApplyBlock = styled.div`
+  width: 220px;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const HeaderWrapper = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  height: 71px;
+const Tour = styled.div`
+  width: 150px;
+  height: 48px;
   display: flex;
-  padding-bottom: 14px;
   justify-content: space-between;
   align-items: flex-end;
+  background: orange;
 `;
 
-const Logo = styled.div`
-  width: 152px;
-  height: 52px;
-  background: #f2f2f2;
-`;
-
-const Login = styled.div`
-  padding-bottom: 9px;
+const TopScroll = styled.div`
+  width: 48px;
+  height: 48px;
+  border: 1px solid orange;
+  font-size: 40px;
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default Apply;

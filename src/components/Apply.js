@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Header = () => {
+const Apply = () => {
   return (
     <HeaderBlock>
       <HeaderWrapper>
@@ -39,4 +39,4 @@ const Login = styled.div`
   padding-bottom: 9px;
 `;
 
-export default Header;
+export default Apply;

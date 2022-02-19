@@ -54,8 +54,151 @@ const Main = () => {
             </SwiperSlide>
           </SwiperWrapper>
         </TopContentsWrapper>
-        <MiddleContentsWrapper></MiddleContentsWrapper>
-        <BottomContentsWrapper></BottomContentsWrapper>
+        <MiddleContentsWrapper>
+          <SwiperWrapper
+            className="banner"
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card1Background></Card1Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card2Background></Card2Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card3Background></Card3Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+          </SwiperWrapper>
+          <SwiperWrapper
+            className="banner"
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card1Background></Card1Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card2Background></Card2Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card3Background></Card3Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+          </SwiperWrapper>
+
+          <SwiperWrapper
+            className="banner"
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card1Background></Card1Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card2Background></Card2Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card3Background></Card3Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+          </SwiperWrapper>
+        </MiddleContentsWrapper>
+        <BottomContentsWrapper>
+          <SwiperWrapper
+            className="banner"
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card1Background></Card1Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card2Background></Card2Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card3Background></Card3Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+          </SwiperWrapper>
+          <SwiperWrapper
+            className="banner"
+            spaceBetween={0}
+            slidesPerView={1}
+            autoplay={{ delay: 5000 }}
+          >
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card1Background></Card1Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card2Background></Card2Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <Card>
+                  <Card3Background></Card3Background>
+                </Card>
+              </Link>
+            </SwiperSlide>
+          </SwiperWrapper>
+        </BottomContentsWrapper>
       </ContentsBlock>
       <Footer />
     </PageBlock>
@@ -70,12 +213,35 @@ const PageBlock = styled.div`
 const ContentsBlock = styled.div`
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
-const TopContentsWrapper = styled.div``;
-const MiddleContentsWrapper = styled.div``;
-const BottomContentsWrapper = styled.div``;
-const MainLogo = styled.div``;
+const TopContentsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  align-items: space-between;
+`;
+
+const MiddleContentsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  align-items: space-between;
+`;
+
+const BottomContentsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  align-items: space-between;
+`;
+
+const MainLogo = styled.div`
+  width: 420px;
+  height: 111px;
+  background: #f2f2f2;
+`;
 
 const SwiperWrapper = styled(Swiper)`
   width: 398px;

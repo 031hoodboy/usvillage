@@ -17,6 +17,8 @@ const HeaderBlock = styled.div`
   border-bottom: 1px solid lightgray;
   position: sticky;
   top: 0;
+  background-color: #fff;
+  z-index: 2;
 `;
 
 const HeaderWrapper = styled.div`
